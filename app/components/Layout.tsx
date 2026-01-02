@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import StudentReviews from "./StudentReviews";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -20,6 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {children}
       </main>
 
+      <StudentReviews />
       <Footer />
     </div>
   );
